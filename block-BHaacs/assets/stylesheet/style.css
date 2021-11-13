@@ -1,0 +1,446 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* General style */
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+   
+}
+
+h1,h2,h3,h4,h5,h6,p,li,small,span,a,body{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    word-spacing: 10px;
+}
+/* font-family: 'Inter', sans-serif; */
+
+a{
+    text-decoration: none;
+}
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.btn {
+    font: 16px;
+    padding: 15px 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px ;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    
+}
+.btn-white{
+    background-color: white;
+    color: rgb(55,68,121);
+}
+.btn-colored {
+    background-color: rgb(89,190,195);
+    color: #fff;
+}
+.flex-40 {
+    flex: 0 1 40% ;
+}
+.flex-22 {
+    flex: 0 1 22% ;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+/* Hero section */
+
+.hero-section{
+    background-color: rgb(89,190,195);
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nav-bar{
+    display: flex;
+}
+#brand-logo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+.nav-item{
+    margin-left: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+h1 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    max-width: 40%;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 2%;
+    word-spacing: 0.5px;
+}
+.hero-img {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.hero-image{
+    display: block;
+    margin: 0 auto;
+    margin-top: -45%;
+    width: 100%;
+   
+}
+.hero-img img {
+    box-shadow: 1px 50px 30px rgb(235,239,249);
+}
+.hero-img a{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(190,201,225);
+}
+.nav-holder img {
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+.nav-holder {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+div:empty {
+    border: 1px solid rgb(233,239,251);
+   
+}
+#toggle, label{
+    display: none;
+}
+
+
+/* Graph section */
+
+.graph-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+.graph-section img {
+    width: 100%;
+}
+h3 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: rgb(41,60,125);
+    font-weight: 600;   
+}
+.graph-section p {
+    color: rgb(117,134,178);
+    line-height: 2;
+    margin: 30px 0;
+}
+.graph-section-btn {
+    padding: 10px 40px;
+    position: relative;
+    border: none;
+}
+.graph-section-btn::before {       
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid #fff;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    left: 0;
+    top: 0%; 
+}
+.graph-section-btn::after {       
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid transparent;
+    border-bottom: 22px solid #fff;
+    border-top: 20px solid #fff;
+    right: 0;
+    top: 0%; 
+}
+/* Table */
+
+.table-section {
+    text-align: center;
+   margin: 100px 0 ;
+}
+h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: rgb(41,60,125);
+    font-weight: 700;   
+    
+}
+table {
+    border: 1px solid lightgrey;
+    width: 100%;
+    margin-top: 50px;
+}
+tr {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    text-align: left;
+}
+tr:nth-child(2n + 1) {
+    background-color: rgb(213,228,229);
+}
+th {
+    background-color: rgb(89,190,195);
+    text-align: left;
+}
+th {
+    border: 1px solid rgb(89,190,195);
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+table,td {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    padding: 10px 15px;
+    color: grey;
+    font-weight: 500;
+}
+
+/* Plan section */
+
+.plan-section {
+    text-align: center;
+}
+.plan-item {
+   padding: 40px;
+    border: 4px solid rgb(233,239,251);
+    border-radius: 10px;
+}
+.plan-section p {
+    color: rgb(109,129,173);
+    word-spacing: normal;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.plan-section li {
+    text-align: left;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.cross-li{
+    color: rgb(109,129,173);
+}
+.plan-section .btn {
+    width: 100%;
+    margin-top: 30px;
+}
+.trial-section {
+    background-color: rgb(89,190,195);
+    text-align: center;
+    padding: 50px 0 ;
+    margin: 100px 0;
+    border-radius: 30px;
+}
+.trial-section h3 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+.trial-section .btn {
+    width: 25%;
+    font-weight: 300;
+}
+.btn-holder {
+    width: 60px;
+    background-color: rgb(186,236,234);
+    height: 25px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.btn-div {
+    background-color: rgb(89,190,195);
+    width: 35%;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plan-section-btn {
+    max-width: 30%;
+    margin: 30px auto;
+    margin-bottom: 80px;
+}
+span {
+    font-weight: 600;
+}
+.standingline {
+    height: 10px;
+    width: 3px;
+    background-color: #fff;
+
+}
+.plan-item h2::before {
+    content: "$ ";
+    color: rgb(89,190,195);
+    font-size: 25px;
+}
+.plan-item h2::after {
+    content: " /Months";
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.plan-item h2 {
+    color: rgb(89,190,195);
+    font-size: 40px;
+    font-weight: 500;
+}
+/* Footer */
+
+.footer li {
+    text-align: left;
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgb(109,129,173);
+}
+.footer a {
+    color: rgb(109,129,173);
+}
+.footer i {
+    padding: 10px;
+    background-color: rgb(89,190,195);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 5px;
+}
+.footer p {
+    margin: 10px 0;
+    color: rgb(109,129,173);
+    word-spacing: normal;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .flex-100 {
+        flex: 0 1 100%;
+        margin: 20px 0;
+    }
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .bars{
+        display: inline-block;
+        color: #fff;
+    }
+    .nav-bar {
+        display: none;
+    }
+    #toggle:checked ~ .nav-bar {
+        display: inline-block;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        position: fixed;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0;
+        height: 100vh;
+        background-color: rgba(89,190,195, 0.8);
+        padding-top:12rem ;
+        z-index: 9;
+    }  
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-bar li {
+        margin: 20px 0;
+    }
+    #brand-logo {
+        position: fixed;
+        top: 1.5rem;
+        z-index: 99;
+        left: 2rem;
+    }
+    .bars {
+        position: fixed;
+        top: 1.5rem;
+        z-index: 99;
+        right: 2rem;
+    }
+}
+    
